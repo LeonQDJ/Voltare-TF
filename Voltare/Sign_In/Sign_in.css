@@ -1,0 +1,359 @@
+/* =========================
+   RESET
+========================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+
+body {
+    min-height: 100vh;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 30px 0;
+
+    font-family: "Segoe UI", Arial, sans-serif;
+
+    background:
+        radial-gradient(
+            circle at top left,
+            rgba(255, 0, 128, 0.12),
+            transparent 35%
+        ),
+        radial-gradient(
+            circle at bottom right,
+            rgba(255, 0, 128, 0.08),
+            transparent 40%
+        ),
+        #050505;
+
+    color: #ffffff;
+}
+
+
+/* =========================
+   CARTÃO
+========================= */
+
+.cracha {
+    width: 700px;
+    max-width: 92%;
+
+    overflow: hidden;
+
+    border-radius: 20px;
+
+    background: #101010;
+
+    border: 1px solid rgba(255, 255, 255, 0.08);
+
+    box-shadow:
+        0 25px 70px rgba(0, 0, 0, 0.6),
+        0 0 40px rgba(255, 0, 128, 0.08);
+}
+
+
+/* =========================
+   FAIXA
+========================= */
+
+.cracha__faixa {
+    height: 7px;
+
+    background: #f50073;
+}
+
+
+/* =========================
+   CORPO
+========================= */
+
+.cracha__corpo {
+    padding: 38px 45px 40px;
+}
+
+
+/* =========================
+   LOGO
+========================= */
+
+.logo-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin-bottom: 25px;
+}
+
+.logo {
+    width: 115px;
+    height: 115px;
+
+    object-fit: contain;
+}
+
+
+/* =========================
+   TÍTULO
+========================= */
+
+.eyebrow {
+    margin-bottom: 7px;
+
+    color: #f50073;
+
+    font-size: 0.75rem;
+    font-weight: 700;
+
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+
+h1 {
+    margin-bottom: 8px;
+
+    font-size: 2rem;
+    font-weight: 700;
+
+    color: #ffffff;
+}
+
+
+.descricao {
+    margin-bottom: 28px;
+
+    color: #858585;
+
+    font-size: 0.9rem;
+}
+
+
+/* =========================
+   GRID DOS CAMPOS
+========================= */
+
+.campos {
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 20px;
+}
+
+
+/* =========================
+   CAMPO
+========================= */
+
+.campo {
+    min-width: 0;
+}
+
+
+.campo label {
+    display: block;
+
+    margin-bottom: 8px;
+
+    color: #d8d8d8;
+
+    font-size: 0.88rem;
+    font-weight: 600;
+}
+
+
+/* =========================
+   INPUT
+========================= */
+
+.campo input {
+    width: 100%;
+
+    padding: 13px 14px;
+
+    border: 1px solid #333333;
+    border-radius: 9px;
+
+    outline: none;
+
+    background: #171717;
+
+    color: #ffffff;
+
+    font-family: inherit;
+    font-size: 0.95rem;
+
+    transition:
+        border-color 0.2s ease,
+        box-shadow 0.2s ease,
+        background 0.2s ease;
+}
+
+
+.campo input::placeholder {
+    color: #666666;
+}
+
+
+.campo input:hover {
+    border-color: #555555;
+}
+
+
+.campo input:focus {
+    border-color: #f50073;
+
+    background: #1c1c1c;
+
+    box-shadow:
+        0 0 0 3px rgba(245, 0, 115, 0.12);
+}
+
+
+/* =========================
+   TEXTO DE AJUDA
+========================= */
+
+.ajuda {
+    display: block;
+
+    margin-top: 6px;
+
+    color: #666666;
+
+    font-size: 0.7rem;
+}
+
+
+/* =========================
+   MENSAGEM
+========================= */
+
+.mensagem {
+    margin-bottom: 15px;
+
+    color: #f50073;
+
+    font-size: 0.85rem;
+
+    text-align: center;
+}
+
+
+/* =========================
+   BOTÃO
+========================= */
+
+#botao-cadastro {
+    width: 100%;
+
+    margin-top: 28px;
+
+    padding: 14px;
+
+    border: none;
+    border-radius: 9px;
+
+    background: #f50073;
+
+    color: #ffffff;
+
+    font-family: inherit;
+
+    font-size: 0.95rem;
+    font-weight: 700;
+
+    cursor: pointer;
+
+    transition:
+        transform 0.2s ease,
+        background 0.2s ease,
+        box-shadow 0.2s ease;
+}
+
+
+#botao-cadastro:hover {
+    background: #ff1985;
+
+    transform: translateY(-2px);
+
+    box-shadow:
+        0 8px 25px rgba(245, 0, 115, 0.25);
+}
+
+
+#botao-cadastro:active {
+    transform: translateY(0);
+}
+
+
+/* =========================
+   RODAPÉ
+========================= */
+
+.rodape {
+    margin-top: 25px;
+
+    color: #666666;
+
+    font-size: 0.82rem;
+
+    text-align: center;
+}
+
+
+.rodape a {
+    color: #f50073;
+
+    font-weight: 600;
+
+    text-decoration: none;
+}
+
+
+.rodape a:hover {
+    text-decoration: underline;
+}
+
+
+/* =========================
+   RESPONSIVIDADE
+========================= */
+
+@media (max-width: 600px) {
+
+    body {
+        padding: 20px 0;
+    }
+
+    .cracha {
+        max-width: 94%;
+    }
+
+    .cracha__corpo {
+        padding: 30px 24px 32px;
+    }
+
+    .campos {
+        grid-template-columns: 1fr;
+        gap: 17px;
+    }
+
+    h1 {
+        font-size: 1.7rem;
+    }
+
+    .logo {
+        width: 95px;
+        height: 95px;
+    }
+}

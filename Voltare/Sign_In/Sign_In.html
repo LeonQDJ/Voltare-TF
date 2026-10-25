@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Cadastro - Voltare TEAM Racing</title>
+
+    <link rel="icon" type="image/png" href="../src/logo.png">
+    <link rel="stylesheet" href="Sign_in.css">
+</head>
+
+<body>
+
+    <div class="cracha">
+
+        <div class="cracha__faixa"></div>
+
+        <div class="cracha__corpo">
+
+
+            <!-- TÍTULO -->
+            <p class="eyebrow">Novo acesso</p>
+
+            <h1>Criar acesso</h1>
+
+            <p class="descricao">
+                Preencha os dados abaixo para criar seu acesso.
+            </p>
+
+            <div id="mensagem" class="mensagem"></div>
+
+            <form id="form-cadastro">
+
+                <div class="campos">
+
+                    <div class="campo">
+                        <label for="primeiro-nome">
+                            Primeiro nome
+                        </label>
+
+                        <input
+                            type="text"
+                            id="primeiro-nome"
+                            name="primeiro-nome"
+                            placeholder="Seu primeiro nome"
+                            required
+                        >
+                    </div>
+
+                    <div class="campo">
+                        <label for="sobrenome">
+                            Sobrenome
+                        </label>
+
+                        <input
+                            type="text"
+                            id="sobrenome"
+                            name="sobrenome"
+                            placeholder="Seu sobrenome"
+                            required
+                        >
+                    </div>
+
+
+                    <div class="campo">
+                        <label for="matricula">
+                            Matrícula
+                        </label>
+
+                        <input
+                            type="text"
+                            id="matricula"
+                            name="matricula"
+                            inputmode="numeric"
+                            maxlength="12"
+                            placeholder="12 dígitos"
+                            required
+                        >
+
+                        <span class="ajuda">
+                            Matrícula de 12 dígitos do SIGAA
+                        </span>
+                    </div>
+
+
+                    <div class="campo">
+                        <label for="email">
+                            E-mail
+                        </label>
+
+                        <input
+                            type="email"
+                            id="email"
+                            name="email"
+                            placeholder="seu@ifsc.edu.br"
+                            required
+                        >
+                    </div>
+
+
+                    <div class="campo">
+                        <label for="senha">
+                            Senha personalizada
+                        </label>
+
+                        <input
+                            type="password"
+                            id="senha"
+                            name="senha"
+                            placeholder="Crie sua senha"
+                            required
+                        >
+
+                        <span class="ajuda">
+                            Letras, números e caracteres especiais
+                        </span>
+                    </div>
+
+
+                    <div class="campo">
+                        <label for="confirmar-senha">
+                            Confirmar senha
+                        </label>
+
+                        <input
+                            type="password"
+                            id="confirmar-senha"
+                            name="confirmar-senha"
+                            placeholder="Digite novamente"
+                            required
+                        >
+                    </div>
+
+                </div>
+
+
+                <button
+                    type="submit"
+                    id="botao-cadastro"
+                >
+                    Criar acesso
+                </button>
+
+            </form>
+
+
+            <p class="rodape">
+                Já possui acesso?
+                <a href="/Login.html">Entrar</a>
+            </p>
+
+        </div>
+
+    </div>
+
+
+    <script src="cadastro.js"></script>
+
+</body>
+
+</html>

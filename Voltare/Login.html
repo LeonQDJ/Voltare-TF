@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login - Voltare TEAM Racing</title>
+  <link rel="stylesheet" href="Login.css">
+  <link rel="icon" type="image/png" href="../src/logo.png">
+
+</head>
+<body>
+  <div class="cracha">
+    <div class="cracha__faixa"></div>
+    <div class="cracha__corpo">
+     
+      <p class="eyebrow"> Acesso restrito</p>
+      <h1>Entrar com matrícula</h1>
+
+      <div id="mensagem" class="mensagem"></div>
+
+      <form id="form-login">
+        <div class="campo">
+          <label for="matricula">Matrícula</label>
+          <input type="text" id="matricula" name="matricula" inputmode="numeric" maxlength="12" placeholder="Até 12 números" required>
+        </div>
+        <div class="campo">
+          <label for="senha">Senha</label>
+          <input type="password" id="senha" name="senha" placeholder="Sua senha" required>
+        </div>
+        <button type="submit" id="botao-login">Entrar</button>
+      </form>
+
+      <p class="rodape">Ainda não tem acesso? <a href="Sign_In/Sign_In.html">Cadastre-se</a></p>
+    </div>
+  </div>
+
+  <script src="login.js"></script>
+</body>
+</html>

@@ -1,0 +1,272 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-family: "Segoe UI", Arial, sans-serif;
+
+    background:
+        radial-gradient(
+            circle at top left,
+            rgba(255, 0, 128, 0.12),
+            transparent 35%
+        ),
+        radial-gradient(
+            circle at bottom right,
+            rgba(255, 0, 128, 0.08),
+            transparent 40%
+        ),
+        #050505;
+
+    color: #ffffff;
+}
+
+.cracha {
+    width: 420px;
+    max-width: 92%;
+    
+    border-radius: 20px;
+    overflow: hidden;
+
+    background: #101010;
+
+    border: 1px solid rgba(255, 255, 255, 0.08);
+
+    box-shadow:
+        0 25px 70px rgba(0, 0, 0, 0.6),
+        0 0 40px rgba(255, 0, 128, 0.08);
+
+    backdrop-filter: blur(12px);
+}
+
+
+/* =========================
+   FAIXA SUPERIOR
+========================= */
+
+.cracha__faixa {
+    height: 8px;
+
+    background: #f50073;
+}
+
+
+/* =========================
+   CORPO
+========================= */
+
+.cracha__corpo {
+    padding: 42px;
+}
+
+
+/* Pequeno texto superior */
+
+.eyebrow {
+    margin-bottom: 8px;
+
+    color: #f50073;
+
+    font-size: 0.75rem;
+    font-weight: 700;
+
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+
+/* Título */
+
+h1 {
+    margin-bottom: 30px;
+
+    font-size: 2rem;
+    font-weight: 700;
+
+    letter-spacing: -0.5px;
+
+    color: #ffffff;
+}
+
+
+/* =========================
+   MENSAGEM
+========================= */
+
+.mensagem {
+    min-height: 0;
+    margin-bottom: 15px;
+
+    font-size: 0.9rem;
+    text-align: center;
+
+    transition: 0.2s ease;
+}
+
+
+/* =========================
+   CAMPOS
+========================= */
+
+.campo {
+    margin-bottom: 20px;
+}
+
+.campo label {
+    display: block;
+
+    margin-bottom: 8px;
+
+    color: #d8d8d8;
+
+    font-size: 0.9rem;
+    font-weight: 600;
+}
+
+
+.campo input {
+    width: 100%;
+
+    padding: 14px 15px;
+
+    border: 1px solid #333333;
+    border-radius: 10px;
+
+    outline: none;
+
+    background: #171717;
+    color: #ffffff;
+
+    font-size: 1rem;
+
+    transition:
+        border-color 0.2s ease,
+        box-shadow 0.2s ease,
+        background 0.2s ease;
+}
+
+
+.campo input::placeholder {
+    color: #666666;
+}
+
+
+.campo input:hover {
+    border-color: #555555;
+}
+
+
+.campo input:focus {
+    border-color: #f50073;
+
+    background: #1c1c1c;
+
+    box-shadow:
+        0 0 0 3px rgba(245, 0, 115, 0.12);
+}
+
+
+/* =========================
+   BOTÃO
+========================= */
+
+#botao-login {
+    width: 100%;
+
+    margin-top: 8px;
+    padding: 14px;
+
+    border: none;
+    border-radius: 10px;
+
+    background: #f50073;
+
+    color: white;
+
+    font-size: 1rem;
+    font-weight: 700;
+
+    cursor: pointer;
+
+    box-shadow:
+        0 8px 20px rgba(235, 37, 169, 0.25);
+
+    transition:
+        transform 0.2s ease,
+        box-shadow 0.2s ease,
+        filter 0.2s ease;
+}
+
+
+#botao-login:hover {
+    transform: translateY(-2px);
+
+    filter: brightness(1.1);
+
+    box-shadow:
+        0 12px 28px rgba(245, 0, 115, 0.25);
+}
+
+
+#botao-login:active {
+    transform: translateY(0);
+}
+
+
+/* =========================
+   RODAPÉ
+========================= */
+
+.rodape {
+    margin-top: 28px;
+
+    color: #666666;
+
+    font-size: 0.85rem;
+    text-align: center;
+}
+
+
+.rodape a {
+    color: #f50073;
+
+    font-weight: 600;
+
+    text-decoration: none;
+
+    transition: color 0.2s ease;
+}
+
+
+.rodape a:hover {
+    color: #fc7dc3;
+
+    text-decoration: underline;
+}
+
+
+/* =========================
+   RESPONSIVIDADE
+========================= */
+
+@media (max-width: 480px) {
+
+    .cracha {
+        max-width: 94%;
+    }
+
+    .cracha__corpo {
+        padding: 32px 25px;
+    }
+
+    h1 {
+        font-size: 1.7rem;
+    }
+}
